@@ -68,10 +68,10 @@
       const tunjangan = parseFloat(document.getElementById('tunjangan').value);
       const masaKerja = parseInt(document.getElementById('masaKerja').value);
 
-      // if (isNaN(gajiPokok) || isNaN(tunjangan) || isNaN(masaKerja)) {
-       // alert("Mohon isi semua field dengan benar!");
-       // return;
-      //}  
+    if (isNaN(gajiPokok) || isNaN(tunjangan) || isNaN(masaKerja)) {
+       alert("Mohon isi semua field dengan benar!");
+    return;
+    }  
 
       const totalGaji = gajiPokok + tunjangan;
 
